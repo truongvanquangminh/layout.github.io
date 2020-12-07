@@ -1,0 +1,263 @@
+body{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+input{
+    outline: none;
+}
+
+.wrapper{
+    width: 1100px;
+    margin: 0 auto;
+    padding: 10px 30px;
+    max-width: 100%;
+}
+
+/*header*/
+.wrapper .header{
+    max-width: 100%;
+    display: flex;
+}
+
+.wrapper .header .logo{
+    width: 25%;
+    border: 2px solid black;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.wrapper .header .banner{
+    width: 75%;
+    border: 2px solid black;
+    text-align: center;
+}
+
+/*menu*/
+.wrapper .menu{
+    max-width: 100%;
+    display: flex;
+    border: 2px solid black;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.menu .menu__left{
+    width: 50%;
+    margin-left: -40px;
+}
+
+.menu ul li{
+    list-style: none;
+    display: inline;
+    border-right: 2px solid black;
+    
+}
+
+.menu ul li:last-child{
+    border-right: none;
+}
+
+.menu ul li a{
+    color: darkblue;
+    padding:10px;
+    text-decoration: none;
+}
+.menu ul li a:hover{
+    color: firebrick;
+}
+
+.menu .menu__right{
+    background: white url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 8px center;  
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 8px 10px 8px 32px;
+    margin-right: 20px;
+    height: 20px;
+    margin-top: 5px;
+}
+
+.menu .menu__right input{
+    border: none;
+}
+
+/*container*/
+
+.container1 {
+    margin-top: 10px;
+    display: flex;
+    max-width: 100%;
+}
+
+.container1 .left{
+    max-width: 20%;
+    display: inline-grid;
+}
+
+.container1 .left .nav1{
+    border: 2px solid black;
+    float: left;
+}
+
+.nav1 ul{
+    padding: 10px 40px 20px 5px;
+    margin: 0;
+}
+
+.nav1 ul li{
+    list-style: none;
+    font-weight: bold;
+}
+
+.container1 .left .nav2{
+    border: 2px solid black;
+    margin-top: 10px;
+    height: 200px;
+}
+
+.container1 .center {
+    max-width: 80%;
+}
+
+.center__main{
+    display: flex;
+    padding: 0 10px;
+
+}
+
+.center__main .main--hotnew{
+    border: 2px solid black;
+    padding: 45px 130px;
+}
+
+.center__main .main--photo{
+    border: 2px solid black;
+    padding: 40px 180px;
+    margin-left: 10px;
+}
+
+.center__main .new{
+    border: 2px solid black;
+    padding: 50px 96px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.container1 .right{
+    border: 2px solid black;
+    padding: 20px;
+    max-width: 20%;
+}
+
+/*footer*/
+.footer{
+    max-width: 100%;
+    border: 2px solid black;
+    margin-top: 20px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .footer__left{
+    margin-left: 10px;
+    float: left;
+}
+
+.footer .footer__right{
+    display: flex;
+    float: right;
+}
+
+.footer .footer__right ul li{
+    list-style: none;
+    display: inline;
+    border-right: 2px solid black;
+    padding: 10px;
+}
+
+.footer .footer__right ul li:last-child{
+    border-right: none;
+}
+
+.footer .footer__right ul li a{
+    color: darkblue;
+    padding:10px;
+    text-decoration: none;
+}
+
+.footer .footer__right ul li a:hover{
+    color: brown;
+}
+
+/*responsive*/
+@media screen and (max-width: 767px){
+    
+    .wrapper .header{
+        max-width: 90%;
+        display: flex;
+    }
+
+    .wrapper .menu{
+        max-width: 90%;
+        display: flex;
+        border: 2px solid black;
+        margin-top: 10px;
+        justify-content: space-between;
+    }
+
+    .wrapper .menu .menu__left{
+        width: 100%;
+    }
+
+    .menu .menu__right{
+        width: 20%;
+        margin-top: 5px;
+        margin-right: 10px;
+    }
+
+    .menu .menu__right input{
+        width: 100%;
+    }
+
+    .container1 {
+        margin-top: 10px;
+        display: flex;
+        max-width: 90%;
+    }
+
+    .container1 .left{
+        max-width: 15%;
+        display: inline-grid;
+    }
+
+    .container1 .center {
+        max-width: 60%;
+    }
+
+    .container1 .right{
+        padding: 20px;
+        max-width: 15%;
+    }
+
+    .footer {
+        max-width: 90%;
+        flex-wrap: wrap;
+    }
+
+    .footer .footer__right {
+        position: absolute;
+        right: 0;
+    }
+
+    .footer .footer__right:last-child{
+        margin-right: 40px;
+    }
+
+    
+    
+}
